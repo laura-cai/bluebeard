@@ -507,7 +507,6 @@ button:hover {
     color: #c9b99a !important;
     font-style: normal;
     letter-spacing: 1px;
-    white-space: nowrap;
 }
 
 .discussion-subtitle {
