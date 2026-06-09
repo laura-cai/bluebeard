@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluebeard: The Ottoman Tyrant in Western Illustration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu Toggle Button -->
+    <div id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar-hidden">
+        <ul class="sidebar-menu">
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li>
+                <a href="#bloody-chamber" class="nav-link">The Chamber</a>
+                <ul class="subnav">
+                    <li><a class="subnav-link" onclick="openViewerFromNav(1)">Walter Crane</a></li>
+                    <li><a class="subnav-link" onclick="openViewerFromNav(2)">Edmund Dulac</a></li>
+                    <li><a class="subnav-link" onclick="openViewerFromNav(3)">W. Heath Robinson</a></li>
+                    <li><a class="subnav-link" onclick="openViewerFromNav(4)">Harry Clarke</a></li>
+                    <li><a class="subnav-link" onclick="openViewerFromNav(5)">Arthur Rackham</a></li>
+                </ul>
+            </li>
+            <li><a href="#travel" class="nav-link">Visual Novel</a></li>
+            <li><a href="#discussion" class="nav-link">Discussion</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#easter-egg" class="nav-link">Special Thanks</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="main-content">
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="content-section">
+        <div class="exhibition-header">
+            <p class="exhibition-label">A Digital Exhibition</p>
+            <h1 class="exhibition-title">BLUEBEARD</h1>
+            <p class="exhibition-subtitle">A Tale of Power, Keys, and Forbidden Doors</p>
+            <div class="header-ornament">— ✦ —</div>
+        </div>
+        <div class="intro-content">
+            <p>The plot is simple. A wealthy man gives his new wife the keys to every room in his house except one. She opens the forbidden door. Behind it are the bodies of his former wives. Bluebeard is one of the strangest stories to survive from the fairy-tale tradition. Nobody agrees where it began. Some trace it to Charles Perrault's <em>Histoires ou Contes du Temps Passé</em> (1697). Others connect it to older stories. But the tale is not really about a beard. It is about a locked room, a key, and a question: why is curiosity a crime when it belongs to a woman?</p>
+            <p>This exhibition looks at five illustrators who answered this question in different ways: Walter Crane (1875), Edmund Dulac (1910), W. Heath Robinson (1921), Harry Clarke (1922), and Arthur Rackham (1933). All of them inherited the same Bluebeard. He wears a turban. He carries a curved sword. He lives in a palace filled with carpets, arches, and servants. Yet he does not mean the same thing in every image.</p>
+            <p>The years between Crane and Rackham were years of enormous change. In 1875 the Ottoman Empire was still a major political power. By 1933 it no longer existed. The illustrators worked between those two dates. As the power changed, so did the way British artists imagined it. These great illustrations tell two stories at once. One is the story of Bluebeard and his doomed wives. The other is the story of an empire passing out of history and into fantasy.</p>
+            <p>This exhibition follows both stories. It asks how artists pictured violence, authority, marriage, and female curiosity. It also asks what happened when a real empire became an image, and when that image continued to survive long after the empire itself was gone.</p>
+            <p class="intro-closing">Five illustrators. Five realms. One dark door that should never have been opened.</p>
+        </div>
+    </section>
+
+    <!-- Book Covers Strip -->
+    <div class="covers-strip">
+        <div class="book-card" onclick="openIntro(1)">
+            <img src="bookcover/Crane.jpeg" alt="Walter Crane 1875">
+            <div class="book-info">
+                <span class="book-artist">Walter Crane</span>
+                <span class="book-title-label">1875</span>
+            </div>
+        </div>
+        <div class="book-card" onclick="openIntro(2)">
+            <img src="bookcover/Edmund.png" alt="Edmund Dulac 1910">
+            <div class="book-info">
+                <span class="book-artist">Edmund Dulac</span>
+                <span class="book-title-label">1910</span>
+            </div>
+        </div>
+        <div class="book-card" onclick="openIntro(3)">
+            <img src="bookcover/Robinson.png" alt="W. Heath Robinson 1921">
+            <div class="book-info">
+                <span class="book-artist">W. Heath Robinson</span>
+                <span class="book-title-label">1921</span>
+            </div>
+        </div>
+        <div class="book-card" onclick="openIntro(4)">
+            <img src="bookcover/Harry_Clark.png" alt="Harry Clarke 1922">
+            <div class="book-info">
+                <span class="book-artist">Harry Clarke</span>
+                <span class="book-title-label">1922</span>
+            </div>
+        </div>
+        <div class="book-card" onclick="openIntro(5)">
+            <img src="bookcover/Rackham.jpg" alt="Arthur Rackham 1933">
+            <div class="book-info">
+                <span class="book-artist">Arthur Rackham</span>
+                <span class="book-title-label">1933</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bloody Chamber Section -->
+    <section id="bloody-chamber" class="content-section">
+        <h2 class="section-title">The Chamber</h2>
+        <div class="chambers-container">
+            <div class="chamber-door" data-chamber="1">
+                <img src="icons/side_bar_1.png" alt="Walter Crane">
+                <span class="chamber-label">Walter Crane</span>
+                <span class="chamber-year">1875</span>
+            </div>
+            <div class="chamber-door" data-chamber="2">
+                <img src="icons/side_bar2.png" alt="Edmund Dulac">
+                <span class="chamber-label">Edmund Dulac</span>
+                <span class="chamber-year">1910</span>
+            </div>
+            <div class="chamber-door" data-chamber="3">
+                <img src="icons/side_bar3.png" alt="W. Heath Robinson">
+                <span class="chamber-label">W. Heath Robinson</span>
+                <span class="chamber-year">1921</span>
+            </div>
+            <div class="chamber-door" data-chamber="4">
+                <img src="icons/side_bar4.jpg" alt="Harry Clarke">
+                <span class="chamber-label">Harry Clarke</span>
+                <span class="chamber-year">1922</span>
+            </div>
+            <div class="chamber-door" data-chamber="5">
+                <img src="icons/side_bar5.png" alt="Arthur Rackham">
+                <span class="chamber-label">Arthur Rackham</span>
+                <span class="chamber-year">1933</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Novel Section -->
+    <section id="travel" class="content-section">
+        <h2 class="section-title">Visual Novel</h2>
+        <div class="book-shell">
+            <div class="page" id="book-page">
+                <div id="novel-visual" class="novel-cutout">
+                    <img id="avatar" src="images/bluebeard_cutout.png" alt="Bluebeard">
+                </div>
+                <div class="dialogue-box">
+                    <span class="novel-label" id="novel-label"></span>
+                    <p id="chat-text">They call me Bluebeard. Over centuries, artists have imagined what I look like — some dressed me in a turban and carried a scimitar, others put me in a powdered wig and silk stockings. Each one was right, after their fashion. This is their story as much as mine.</p>
+                    <div class="novel-footer">
+                        <span class="novel-counter" id="novel-counter">1 / 15</span>
+                        <div class="novel-nav">
+                            <button class="novel-nav-btn" id="novel-prev" onclick="prevPage()">&#8249;</button>
+                            <button class="novel-nav-btn" id="novel-next" onclick="nextPage()">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Section -->
+    <section id="discussion" class="content-section">
+        <h2 class="section-title">Discussion</h2>
+        <div class="intro-content">
+            <h3 class="discussion-subtitle">The Empire in the Picture: Orientalism, Violence, and the Decay of a Visual Tradition</h3>
+            <p>Taken as a whole, the exhibition reveals more than British illustrators' use of the Ottoman world as a useful backdrop. The visual language they used to depict Bluebeard shifted in direct proportion to Britain's changing relationship with the Ottoman Empire, and those shifts were quite legible to readers who encountered them.</p>
+            <p>Across the distance between Crane's European courtier and Rackham's silhouette, between Dulac's seductive pasha and Clarke's grotesque, what unites them all is the consistent function the Ottoman coding performs: relocating the violence. Bluebeard's wife-murder becomes something that happens in another world, at a safe aesthetic distance, in palaces decorated with cushions and turbans rather than in the English drawing rooms where the books were read. The more closely that other world resembled a living political fact, the more the relocation carried genuine ideological weight. The more the empire receded into history, the more the costume became mere convention — an inherited vocabulary with nothing left behind it.</p>
+            <p>Among all the selected illustrations, Clarke's final image — with Bluebeard composed entirely of his victims, their hair and faces dissolved into his silhouette — refuses that relocation. It insists that the story is not about what happens in Ottoman palaces. It is about possession, incorporation, and the annihilation of women within the structure of marriage itself. The wives have not been locked in a room. They have been absorbed into their husband's substance. That image does not let the reader look away to a comfortable elsewhere. It holds the mirror up and says: this is not a story from over there. This is a story about here.</p>
+            <p>A century of Bluebeard illustration is, in the end, a century of negotiation — between domesticating a story's violence and confronting it, between placing horror safely abroad and acknowledging that it lives at home. The Ottoman turban was the visual instrument of that negotiation. When the empire behind it collapsed, illustrators were left holding a costume with no body inside it, and had to decide what to do next. Most hung it up. Clarke, at least, asked what it had been hiding.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <h2 class="section-title">About</h2>
+        <div class="about-cards">
+
+            <div class="author-card">
+                <img src="author/laura.jpg" alt="Laura" class="author-avatar">
+                <h3 class="author-name">Laura</h3>
+                <p class="author-role">Writing &amp; Website Development</p>
+                <ul class="author-desc">
+                    <li>Introduction</li>
+                    <li>Visual Novel</li>
+                    <li>Overall Aesthetic</li>
+                    <li>Website Development</li>
+                </ul>
+            </div>
+
+            <div class="author-card">
+                <img src="author/sunny.jpg" alt="Sunny" class="author-avatar">
+                <h3 class="author-name">Sunny</h3>
+                <p class="author-role">Research &amp; Writing</p>
+                <ul class="author-desc">
+                    <li>Archival Research &amp; Image Sourcing</li>
+                    <li>Visual Analysis of the Illustrations</li>
+                </ul>
+            </div>
+
+            <div class="author-card">
+                <img src="author/claude.png" alt="Claude Code" class="author-avatar">
+                <h3 class="author-name">Claude Code</h3>
+                <p class="author-role">Website Development</p>
+                <p class="author-desc">The real computer scientist. Likely Turing Award winner within the next couple of years.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Easter Egg Section -->
+    <section id="easter-egg" class="content-section">
+        <h2 class="section-title">Special Thanks To</h2>
+        <div class="easter-content">
+            <div class="easter-friend">
+                <img src="special_acknowledgement/duke_friend_avatar.jpg" alt="Duke Friend" class="friend-avatar">
+                <p class="easter-text">A human from Duke helped us visit <em>Dis/orient: Contemporary Art of the Asian Diaspora</em> in person and brought back something truly inspiring.</p>
+            </div>
+            <div class="easter-exhibit">
+                <div class="exhibit-flipper">
+                    <img src="special_acknowledgement/exhibit.jpg" alt="Dis/orient Exhibition" class="exhibit-slide active" id="exhibit-slide-0">
+                    <img src="special_acknowledgement/duke_exhibition_info.png" alt="Exhibition Info" class="exhibit-slide" id="exhibit-slide-1">
+                    <button class="exhibit-arrow" onclick="flipExhibit()">&#8250;</button>
+                </div>
+                <p class="exhibit-caption">Dis/orient: Contemporary Art of the Asian Diaspora<br>December 13, 2025 – July 19, 2026</p>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    <!-- Intro Popup -->
+    <div id="intro-popup">
+        <div class="intro-popup-content">
+            <div class="intro-popup-header">
+                <span id="intro-popup-artist" class="intro-popup-artist"></span>
+                <button class="intro-popup-close" onclick="closeIntro()">Exit</button>
+            </div>
+            <h3 id="intro-popup-title" class="intro-popup-title"></h3>
+            <div id="intro-popup-body" class="intro-popup-body"></div>
+        </div>
+    </div>
+
+    <!-- Chamber Viewer Overlay -->
+    <div id="chamber-viewer">
+        <div class="viewer-header">
+            <span id="viewer-artist" class="viewer-artist"></span>
+            <span class="viewer-counter">
+                <span id="viewer-current">1</span> / <span id="viewer-total">7</span>
+            </span>
+            <button class="viewer-close" onclick="closeViewer()">Exit</button>
+        </div>
+        <div class="viewer-body">
+            <button class="viewer-nav viewer-prev" onclick="prevSlide()">&#8249;</button>
+            <div class="viewer-slide" id="viewer-slide-inner">
+                <div class="viewer-image">
+                    <img id="viewer-img" src="" alt="">
+                </div>
+                <div class="viewer-text">
+                    <span id="viewer-section-tag" class="viewer-section-tag"></span>
+                    <h3 class="viewer-slide-title" id="viewer-title"></h3>
+                    <div class="viewer-analysis" id="viewer-analysis"></div>
+                </div>
+            </div>
+            <button class="viewer-nav viewer-next" onclick="nextSlide()">&#8250;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
